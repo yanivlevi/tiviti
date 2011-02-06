@@ -8,18 +8,16 @@
   <body>
     <div class="container">
       <header>
-        <%= image_tag("tiviti-logo.jpg", :alt => "tiviti", :class => "round") %>
-        <nav class="round">
-          <ul>
-            <li><%= link_to "Home", '#' %></li>
-            <li><%= link_to "Help", '#' %></li>
-            <li><%= link_to "Sign in", '#' %></li>
-          </ul>
-        </nav>
+        <%= render 'layouts/header' %>
       </header>
+      
+      <%= render 'layouts/mainnav' %>
+      
       <section class="round">
         <%= yield %>
       </section>
+      
+      
        <%= render 'layouts/footer' %>
     </div>
   </body>
