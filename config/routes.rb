@@ -1,7 +1,15 @@
 Tiviti::Application.routes.draw do
-  get "pages/home"
-  get "pages/contact"
-  get "pages/about"
+
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  
+  root :to => 'pages#home'  
+  
+  # no need these specific gets if doing match as above. The match stuff was added 5.2.2 in the tutorial 
+  #get "pages/home"
+  #get "pages/contact"
+  #get "pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #7E3517;
+   background: #7E3517;
 }
 
 header {
@@ -78,6 +78,13 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+/* Round corners */
+.round {
+  -moz-border-radius:    5px;
+  -webkit-border-radius: 5px;
+  border-radius:         5px;
+}
+
 /* Sign up button */
 
 a.signup_button {
@@ -91,4 +98,16 @@ a.signup_button {
   font-size: 150%;
   font-weight: bold;
   padding: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
 }
