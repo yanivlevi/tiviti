@@ -80,9 +80,9 @@ nav ul li a:hover {
 
 /* Round corners */
 .round {
-  -moz-border-radius:    5px;
-  -webkit-border-radius: 5px;
-  border-radius:         5px;
+  -moz-border-radius:    3px;
+  -webkit-border-radius: 3px;
+  border-radius:         3px;
 }
 
 /* Sign up button */
@@ -110,4 +110,63 @@ footer {
 
 footer nav {
   float: none;
+}
+
+
+/* From Jon */
+div.activity
+{
+  font-family: Arial;
+  font-size: 12px;
+  margin: 1px;
+  width: 600px;
+  padding: 0px;
+  text-align: left;
+  border-right: 1px solid #F5F5F5;
+  border-left: 1px solid #F5F5F5;
+  border-top: 1px solid #F5F5F5;
+  border-bottom: 1px solid #F5F5F5;
+  border-collapse: collapse;
+}
+.activity td
+{
+  padding: 3px;
+  background: #ffffff; 
+}
+.activity tr:hover td
+{
+  background: #F9F9F9;
+}
+div.nav
+{
+  font-family: Arial;
+  font-size: 12px;
+  font-color: #EEEEEE;
+  margin: 0px;
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  background-color: #666666;
+  border-collapse: collapse;
+}
+.nav td
+{
+  font-family: Arial;
+  font-size: 12px;
+  font-color: #FFFFFF;
+  width: 12%;
+  padding: 4px;
+  text-align: center;
+}
+.nav a:link 
+{
+  color:#EEEEEE;text-decoration:none;
+}
+.nav a:visited 
+{
+  color:#EEEEEE;text-decoration:none;
+}
+.nav a:hover 
+{
+  text-decoration:none;
 }

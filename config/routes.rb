@@ -1,6 +1,10 @@
 Tiviti::Application.routes.draw do
 
-  get "users/new"
+  # this line below is to allow the routing to work for localhost/users/1 see 6.26 in tutorial 
+  resources :users
+  
+  # the get line is not needed anymore 
+  #get "users/new"
 
   match '/signup',  :to => 'users#new'
   match '/contact', :to => 'pages#contact'

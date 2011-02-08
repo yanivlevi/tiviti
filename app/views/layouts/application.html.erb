@@ -5,7 +5,9 @@
     <%= csrf_meta_tag %>
     <%= render 'layouts/stylesheets' %>
   </head>
+  
   <body>
+    
     <div class="container">
       <header>
         <%= render 'layouts/header' %>
@@ -18,7 +20,13 @@
       </section>
       
       
-       <%= render 'layouts/footer' %>
+      <!-- Here's some debug stuff that will show on the application, not the if statement, only for development env. -->
+      <%= debug(params) if Rails.env.development? %>
+      
+      
+      
+      <%= render 'layouts/footer' %>
+       
     </div>
   </body>
 </html>
