@@ -1,2 +1,17 @@
 <!--# just a dummy page to show user information temporary--> 
-<%= @user.name %>, <%= @user.email %>
+
+<table class="profile" summary="Profile information">
+  <tr>
+    <td class="main">
+    	<h1>
+			<%= gravatar_for @user %>
+			<%= @user.name %> 
+		</h1>
+		<%= @user.email %>
+	</td>
+    <td class="sidebar round">
+      <strong>Name:</strong> <%= @user.name %><br />
+      <strong>URL:</strong>  <%= link_to user_path(@user), @user %>
+    </td>
+  </tr>
+</table>
