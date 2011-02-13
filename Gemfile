@@ -9,7 +9,10 @@ gem 'gravatar_image_tag', '1.0.0.pre2'
 group :development do
   gem 'rspec-rails', '2.3.0'
   gem 'annotate-models', '1.0.4'
+  
+  # sqlite3 gem was moved to development since it breaks in heroku (heorku doesn't support sqlite). See details here: http://getsatisfaction.com/railstutorial/topics/heroku_db_migrate_error_sqlite3_problem
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  
 end
 
 group :test do
