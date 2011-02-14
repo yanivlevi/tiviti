@@ -1,0 +1,26 @@
+body
+{
+background-image:url('background6.png');
+background-repeat:repeat-x;
+}
+
+font
+{
+font-family:"Arial"; font-size:12;
+}
+
+a:link 
+
+{
+color:#0000FF;text-decoration:none;
+}
+
+a:visited 
+{
+color:#0000FF;text-decoration:none;
+}
+
+a:hover 
+{
+text-decoration:underline;
+}

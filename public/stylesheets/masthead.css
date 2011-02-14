@@ -1,0 +1,10 @@
+div.masthead
+{
+	align: center;
+	font-family: Arial;
+	font-size: 12px;
+	width: 100%;
+	background-image: url('background7.png');
+	background-color: #808080;
+	border-collapse: collapse;
+}

@@ -1,0 +1,27 @@
+div.nav-auxiliary
+{
+	float: right;
+	font-family: Arial;
+	font-size: 12px;
+	font-color: #FFFFCC;
+}
+.nav-auxiliary p
+{
+	align: right;
+}
+.nav-auxiliary td
+{
+	padding: 4px;
+}
+.nav-auxiliary a:link 
+{
+	color:#EEEEEE;text-decoration:none;
+}
+.nav-auxiliary a:visited 
+{
+	color:#EEEEEE;text-decoration:none;
+}
+.nav-auxiliary a:hover 
+{
+	text-decoration:underline;
+}

@@ -1,15 +1,22 @@
 Tiviti::Application.routes.draw do
 
+  #get "sessions/new"
+
   # this line below is to allow the routing to work for localhost/users/1 see 6.26 in tutorial 
   resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
   
   # the get line is not needed anymore 
   #get "users/new"
 
   match '/signup',  :to => 'users#new'
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
+  
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'
+  
   
   root :to => 'pages#home'  
   

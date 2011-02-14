@@ -1,0 +1,34 @@
+div.nav
+{
+	font-family: Arial;
+	font-size: 12px;
+	font-color: #EEEEEE;
+	text-align: center;
+	border-collapse: collapse;
+	height: 100%;
+}
+
+.nav a:link 
+{
+	color:#EEEEEE;text-decoration:none;
+}
+
+.nav a:visited 
+{
+	color:#EEEEEE;text-decoration:none;
+}
+
+.nav a:hover 
+{
+	text-decoration:none;
+}
+
+.nav td
+{
+	spacing: 1px;
+}
+
+.nav tr
+{
+	width: 100%;
+}

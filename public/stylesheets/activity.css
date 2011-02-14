@@ -1,0 +1,23 @@
+div.activity
+{
+	font-family: Arial;
+	font-size: 12px;
+	margin: 1px;
+	width: 600px;
+	padding: 0px;
+	text-align: left;
+	border-right: 1px solid #F5F5F5;
+	border-left: 1px solid #F5F5F5;
+	border-top: 1px solid #F5F5F5;
+	border-bottom: 1px solid #F5F5F5;
+	border-collapse: collapse;
+}
+.activity td
+{
+	padding: 3px;
+	background: #ffffff; 
+}
+.activity tr:hover td
+{
+	background: #F9F9F9;
+}
