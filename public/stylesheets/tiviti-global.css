@@ -183,6 +183,16 @@ div.field, div.actions {
   font-size: 12px;
   list-style: square;
 }
+/*-----------------------------------------------------*/
+/* used for index.html.erb to display all users in DB */
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+/*-----------------------------------------------------*/
 
 /* From Jon */
 div.activity

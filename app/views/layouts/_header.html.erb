@@ -2,11 +2,19 @@
   <%= link_to logo, root_path %>
   <nav class="round">
     <ul>
-      <li><%= link_to "Home", root_path %></li>
+      <!-- no need for header link since titivi logo is linked to it>
+      	<li><%= link_to "Home", root_path %></li>
+      -->
+      
+       <% if signed_in? %>
+      		<li><%= link_to "Users", users_path %></li>       
+       <% end %>
+       
       <li><%= link_to "Help", help_path %></li>
       
       <% if signed_in? %>
       	<li><%= link_to "Profile", current_user %></li>
+      	<li><%= link_to "Settings", edit_user_path(current_user) %></li>
 	  <% end %>
       
       <% if signed_in? %>

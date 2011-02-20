@@ -5,6 +5,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
 gem 'gravatar_image_tag', '1.0.0.pre2'
+gem 'will_paginate', '3.0.pre2'
 
 group :development do
   gem 'rspec-rails', '2.3.0'
@@ -12,6 +13,7 @@ group :development do
   
   # sqlite3 gem was moved to development since it breaks in heroku (heorku doesn't support sqlite). See details here: http://getsatisfaction.com/railstutorial/topics/heroku_db_migrate_error_sqlite3_problem
   gem 'sqlite3-ruby', :require => 'sqlite3'
+  gem 'faker', '0.3.1'
   
 end
 

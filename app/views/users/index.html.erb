@@ -1,0 +1,22 @@
+<!-- A page to display all users in the database -->
+<h1>All users</h1>
+
+<%= will_paginate %>
+
+
+<ul class="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+  <% end %>
+</ul>
+
+<!-- we can eliminate the loop above by doing render right on the @users variable. I didn't do it sinse 
+	it's not as clear from code perspective - which partical (_user.html.erb is being rendered)
+
+<ul class="users">
+  <%= render @users %>
+</ul>
+
+-->
+
+<%= will_paginate %>
